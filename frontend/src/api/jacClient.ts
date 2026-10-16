@@ -21,9 +21,11 @@ export interface WalkerResponse<T = any> {
  */
 export async function callWalker<T = any>(
   walkerName: string,
-  payload: Record<string, any> = {}
+  payload: Record<string, any> = {},
+  nodeId: string = 'root'
 ): Promise<WalkerResponse<T>> {
-  const url = `${JAC_BASE_URL}/walker/${walkerName}`;
+  const endpoint = walkerName.includes('/') ? walkerName : `${walkerName}/${nodeId}`;
+  const url = `${JAC_BASE_URL}/walker/${endpoint}`;
 
   try {
     const response = await fetch(url, {

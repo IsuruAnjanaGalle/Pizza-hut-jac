@@ -1,7 +1,7 @@
-include:jac models;
-include:jac walkers_catalog;
-include:jac walkers_delivery;
-include:jac walkers_chat;
+include models;
+include walkers_catalog;
+include walkers_delivery;
+include walkers_chat;
 
 # Server entry walker
 walker:pub init {
