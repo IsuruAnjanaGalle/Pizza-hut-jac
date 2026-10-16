@@ -1,0 +1,7 @@
+[project]
+name = "pizza_hut_backend"
+version = "0.1.0"
+
+[apps.backend]
+kind = "service"
+entry-point = "main"

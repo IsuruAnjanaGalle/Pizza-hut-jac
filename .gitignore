@@ -218,3 +218,19 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node & Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Jac & Jaseci
+.jac/
+__jac_gen__/
+
+# Environment
+.env
+.env.local
+.env.production
+
